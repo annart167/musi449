@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Mariachi vs. Classical Sheet Music Interpretation</h1>
+  <header>
+    <h1>Classical vs Mariachi: A Comparative Study</h1>
+    <p class="intro">
+      This project explores how classical musicians and mariachi musicians interpret the same sheet music across several instruments. 
+      Listen to side-by-side examples and read the analysis to learn more about genre-based differences in musical expression.
+    </p>
+  </header>
 
   <div class="tabs">
     <button class="tab-button active" onclick="showTab('violin')">Violin</button>
@@ -160,10 +166,10 @@
     <!-- Bass content goes here -->
     <div class="audio-pair">
         <h3>Style 1: cumbia</h3>
-        <p><strong>Classical:</strong></p>
-        <audio controls src="Recordings/ron_cla_cum.mp3"></audio>
-        <p><strong>Mariachi:</strong></p>
-        <audio controls src="Recordings/ron_mar_cum.mp3"></audio>
+          <p><strong>Classical:</strong></p>
+          <audio controls src="Recordings/ron_cla_cum.mp3"></audio>
+          <p><strong>Mariachi:</strong></p>
+          <audio controls src="Recordings/ron_mar_cum.mp3"></audio>
         <div class="analysis">
           <p><em>The classical bass sound is clean, warm, and balanced. The articulation is precise and restrained with smooth transitions, and softer attacks. Overall, it is formal and carefully shaped. The mariachi guitarron sound is a bit brighter and more vibrant, with some string buzz or edge. The articulation is rhythmic and lively, and attacks are more assertive. Overall, it is playful and energetic, prioritizing a dance feel. </em></p>
         </div>
@@ -198,5 +204,15 @@
       event.currentTarget.classList.add('active');
     }
   </script>
+
+  <section class="overall-results">
+    <h2>Overall Results</h2>
+    <p>
+      Across all instruments, mariachi interpretations tended to emphasize rhythmic flexibility and stylistic embellishments,
+      while classical interpretations followed stricter tempo and articulation markings. These tendencies highlight how genre 
+      expectations influence musical choices even when performers read from the same sheet music.
+    </p>
+  </section>
+
 </body>
 </html>
